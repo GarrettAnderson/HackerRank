@@ -21,11 +21,11 @@ function sides(literals, ...expressions) {
         // sorted.push(measurements[acc])
         if (measurements[acc + 1] < measurements[acc]) {
             sorted.push(measurements[acc + 1])
-            // console.log(sorted)
+            console.log(sorted[acc])
         } else {
             sorted.push(measurements[acc - 1])
-
+            console.log(sorted[acc])
         }
-            console.log(sorted)
+            // console.log(sorted)
     })
 }
