@@ -10,6 +10,6 @@ function sides(literals, ...expressions) {
     let s1 = (perim + (Math.sqrt(Math.pow(perim, 2) - (16 * area))))/4
     let s2 = (perim - (Math.sqrt(Math.pow(perim, 2) - (16 * area))))/4
 
-    console.log([s1, s2])
+    console.log(s1, s2)
 
 }
