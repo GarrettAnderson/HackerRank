@@ -18,15 +18,14 @@ function sides(literals, ...expressions) {
     // console.log(measurements)
 
     measurements.map((val, acc) => {
-        sorted.push(measurements[acc])
-        if (sorted[acc] < sorted[acc + 1]) {
-            sorted.push(measurements[acc])
+        // sorted.push(measurements[acc])
+        if (measurements[acc + 1] < measurements[acc]) {
+            sorted.push(measurements[acc + 1])
             // console.log(sorted)
         } else {
-            // sorted.push(measurements[acc])
-            console.log(sorted)
+            sorted.push(measurements[acc - 1])
 
         }
-            // console.log(sorted)
+            console.log(sorted)
     })
 }
