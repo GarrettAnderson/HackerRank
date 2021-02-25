@@ -9,8 +9,8 @@
 
 ##Using Functions
   * Define a normal JavaScript function.
-  * Create an object by using the new keyword.
-  * Define properties and methods for a created object using the this keyword.
+  * Create an object by using the _new_ keyword.
+  * Define properties and methods for a created object using the _this_ keyword.
 
 ####EXAMPLE
 
@@ -167,7 +167,7 @@ console.log(lime.getInformation());
     * A singleton class is a design pattern that restricts a class to a single instance. When we assign the value of new function(){...} to a variable, the following happens:
 
     * We define an anonymous constructor function.
-    * We invoke the anonymous constructor function with the new keyword.
+    * We invoke the anonymous constructor function with the _new_ keyword.
 
 ####EXAMPLE
 
@@ -208,7 +208,7 @@ console.log(lime.getInformation());
   **We define classes in two ways:**
 
 ##Class Declarations
-    * One way to define a class is using a class declaration. To declare a class, we use the class keyword and follow it with the class' name. Ideally, we always write class names in TitleCase.
+    * One way to define a class is using a class declaration. To declare a class, we use the _class_ keyword and follow it with the class' name. Ideally, we always write class names in TitleCase.
 
 ####EXAMPLE
 
@@ -333,7 +333,7 @@ console.log('p:', p);
 
   * A class can only have one special method with the name constructor, and attempting to write a class containing more than one constructor method will throw a SyntaxError.
 
-  * To implement inheritance, we can use the super keyword in a constructor to call a parent class constructor.
+  * To implement inheritance, we can use the _super_ keyword in a constructor to call a parent class constructor.
 
 
 ###Prototype Methods
@@ -376,7 +376,7 @@ console.log(square.getArea());
 ###Static Methods
   * Static methods are methods relevant to all instances of a class — not just any one instance. These methods receive information from their arguments and not a class instance, which allows us to invoke a class' static methods without creating an instance of the class. In fact, we actually can't call a static method on an instantiated class object (attempting to do so throws a TypeError).
 
-  * We define a class' static methods using the static keyword. We typically use these methods to create utility functions for applications, as they can't be called on class objects.
+  * We define a class' static methods using the _static_ keyword. We typically use these methods to create utility functions for applications, as they can't be called on class objects.
 
 
 ####EXAMPLE
@@ -441,9 +441,9 @@ catch (exception) {
 ###Inheritance
   * In essence, this construct allows us to create an object prototype or class that's an extension of another object prototype or class. A class inheriting from some other class (referred to as a superclass or parent class) is called a subclass (or child class). The subclass inherits the superclass' methods and behaviors, but it can also declare new ones or even override existing ones.
 
-  * Subclassing with the extends Keyword
+  * Subclassing with the _extends_ Keyword
 
-  * We use the extends keyword in class declarations or class expressions to create a child class (i.e., subclass).
+  * We use the _extends_ keyword in class declarations or class expressions to create a child class (i.e., subclass).
 
 ####EXAMPLE
 
@@ -541,8 +541,8 @@ spot = new Animal('Spot');
 spot.speak();
 ```
 
-###Superclass Calls Using the super Keyword
-  * We use the super keyword to call functions on an object's parent.
+###Superclass Calls Using the _super_ Keyword
+  * We use the _super_ keyword to call functions on an object's parent.
 
 ####EXAMPLE
 
