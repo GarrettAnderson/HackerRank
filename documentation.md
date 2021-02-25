@@ -327,7 +327,7 @@ let p = new Polygon(1, 2);
 console.log('p:', p);
 ```
 
-### The Constructor Method
+## The Constructor Method
   * The constructor method is a special method we use to create and initialize objects of a class.
 
   * A class can only have one special method with the name constructor, and attempting to write a class containing more than one constructor method will throw a SyntaxError.
@@ -373,9 +373,9 @@ console.log(square.getArea());
 ```
 
 ### Static Methods
-   Static methods are methods relevant to all instances of a class — not just any one instance. These methods receive information from their arguments and not a class instance, which allows us to invoke a class' static methods without creating an instance of the class. In fact, we actually can't call a static method on an instantiated class object (attempting to do so throws a TypeError).
+  * Static methods are methods relevant to all instances of a class — not just any one instance. These methods receive information from their arguments and not a class instance, which allows us to invoke a class' static methods without creating an instance of the class. In fact, we actually can't call a static method on an instantiated class object (attempting to do so throws a TypeError).
 
-   We define a class' static methods using the _static_ keyword. We typically use these methods to create utility functions for applications, as they can't be called on class objects.
+  * We define a class' static methods using the _static_ keyword. We typically use these methods to create utility functions for applications, as they can't be called on class objects.
 
 
 #### EXAMPLE
@@ -438,11 +438,11 @@ catch (exception) {
 ```
 
 ### Inheritance
-   In essence, this construct allows us to create an object prototype or class that's an extension of another object prototype or class. A class inheriting from some other class (referred to as a superclass or parent class) is called a subclass (or child class). The subclass inherits the superclass' methods and behaviors, but it can also declare new ones or even override existing ones.
+  * In essence, this construct allows us to create an object prototype or class that's an extension of another object prototype or class. A class inheriting from some other class (referred to as a superclass or parent class) is called a subclass (or child class). The subclass inherits the superclass' methods and behaviors, but it can also declare new ones or even override existing ones.
 
-   Subclassing with the _extends_ Keyword
+  * Subclassing with the _extends_ Keyword
 
-   We use the _extends_ keyword in class declarations or class expressions to create a child class (i.e., subclass).
+  * We use the _extends_ keyword in class declarations or class expressions to create a child class (i.e., subclass).
 
 #### EXAMPLE
 
