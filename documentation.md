@@ -719,7 +719,7 @@ catch (exception) {
 ### Binary Number Basics
 * The binary, or base-2, numeral system is a way for us to express numbers. It's called binary because it only uses _two_ symbols, 0 and 1, to express these numbers. Examples of binary numbers are 1011, 100011, and 111.
 * The number of symbols in a number system is called its _base_ or _radix_. This is why we often see binary numbers referred to as base-2 (because each digit is in {0, 1}), and decimal numbers referred to as base-10 (because each digit is in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}).
-* We use the notation  to discuss numbers with different radixes, where ? is the number and _b_ is the base. For example, (1101)sub2 is the binary equivalent of the decimal number (13)sub10.
+* We use the notation  to discuss numbers with different radixes, where ? is the number and _b_ is the base. For example, (1101)base-2 is the binary equivalent of the decimal number (13)base-10.
 * Each digit in a binary number is called a _bit_.
 
 ### Base-10 (Decimal) to Base-2 (Binary) Conversions
@@ -732,3 +732,91 @@ catch (exception) {
 
 
 ### Base-2 (Binary) to Base-10 (Decimal) Conversions
+* Let's say we have a binary number with  bits we can express as . We use the following summation to calculate its base- integer value:
+
+Note that  is the LSB and  is the MSB.
+
+Example
+
+The table below depicts the conversion from  to :
+
+Significance				
+Least				
+Most				
+When we sum the values of each , we get .
+
+### Representing Negative Base- Numbers in Base-
+In this explanation, we're representing our integers as -bit signed binary numbers. To represent an integer, , in binary, we perform the following steps:
+
+**SEE HackerRank**
+
+Find the -bit binary representation of .
+Take the 's complement. We do this by inverting all the binary number's bits (i.e., every  becomes a , and every  becomes a ).
+Take the 's complement by adding  to the 's complement.
+The 's complement is the binary representation of .
+
+#### Examples
+
+Let's look at the binary representation of :
+
+First, let's look at . When we convert it to binary, we get .
+The 's complement of  is .
+Then we add  to  to get 's 's complement, , which is the value of .
+Let's look at the binary representation of :
+
+ is 's 's complement.
+ is 's 's complement (i.e., ).
+Bitwise Operation Conventions
+Conceptually, the bitwise logical operators work as follows:
+
+The operands are converted to -bit integers, meaning they're expressed as sequences of  zeroes and ones. Any number larger than  bits is reduced to  bits by cutting off and discarding its excess most significant bits. The example below shows a binary integer before and after it's converted to a -bit integer:
+Before: 11100110111110100000000000000110000000000001
+After:              10100000000000000110000000000001
+Each bit in the first operand is paired with the corresponding bit in the second operand from least to most significant. In other words, the first LSB matches the first LSB, the second LSB matches the second LSB, and so on.
+The operator is applied to each pair of bits so that the resulting number is constructed bitwise (i.e., bit-by-bit).
+Bitwise AND (&)
+This operator performs the AND operation on each pair of bits. Given two binary numbers,  and , the result of an AND operation on the corresponding bits at each position  (i.e., ) is  if and only if both  and  are . The truth table for the bitwise AND operation is:
+
+#### Example
+
+### Bitwise OR (|)
+* This operator performs the OR operation on each pair of bits. Given two binary numbers,  and , the result of an OR operation on the corresponding bits at each position  (i.e., ) is  if  and/or  are . The truth table for the bitwise OR operation is:
+
+#### Example
+
+### Bitwise XOR (^)
+* This operator performs the XOR operation on each pair of bits. Given two binary numbers,  and , the result of an XOR operation on the corresponding bits at each position  (i.e., ) is  if either  or  is  (i.e., the values of the two operands are different). The truth table for the bitwise XOR operation is:
+
+#### Example
+
+### Bitwise NOT (~)
+* This operator performs the NOT operation on each pair of bits in a number. Given a binary number, , the NOT operation (i.e., ) inverts each bit in the number. The truth table for the bitwise NOT operation is:
+
+#### Example
+
+**Here are some more examples of bitwise operations:**
+
+```
+// Bitwise AND
+     9 (base 10) = 00000000000000000000000000001001 (base 2)
+    14 (base 10) = 00000000000000000000000000001110 (base 2)
+                   --------------------------------
+14 & 9 (base 10) = 00000000000000000000000000001000 (base 2) = 8 (base 10)
+
+// Bitwise OR
+     9 (base 10) = 00000000000000000000000000001001 (base 2)
+    14 (base 10) = 00000000000000000000000000001110 (base 2)
+                   --------------------------------
+14 | 9 (base 10) = 00000000000000000000000000001111 (base 2) = 15 (base 10)
+
+// Bitwise XOR
+     9 (base 10) = 00000000000000000000000000001001 (base 2)
+    14 (base 10) = 00000000000000000000000000001110 (base 2)
+                   --------------------------------
+14 ^ 9 (base 10) = 00000000000000000000000000000111 (base 2) = 7 (base 10)
+
+// Bitwise NOT
+ 9 (base 10) = 00000000000000000000000000001001 (base 2)
+               --------------------------------
+~9 (base 10) = 11111111111111111111111111110110 (base 2) = -10 (base 10)
+```
