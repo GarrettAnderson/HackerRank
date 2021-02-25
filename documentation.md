@@ -1,6 +1,6 @@
 
 
-# DAY 5: Classes in JavaScript
+# DAY 4: Classes in JavaScript
 
 
 ## Functional Classes
@@ -90,7 +90,7 @@ console.log(lime.getInformation());
      * Fortunately, every function in JavaScript has something called a prototype property, which is empty by default.
 
      * We can think of a function's prototype as an object blueprint or paradigm; when we add methods and properties to the prototype, they are accessible to all instances of that function.
-     
+
      * This is _especially useful for inheritance_ (discussed below).
 
 **We can add a function to our constructor function's prototype like so:**
