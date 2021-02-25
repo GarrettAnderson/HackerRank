@@ -48,12 +48,43 @@
 
         // A: return the modifiedArray
 
-let positiveMult = [];
-let oddMult = [];
+        /*
+         * Modify and return the array so that all even elements are doubled and all odd elements are tripled.
+         *
+         * Parameter(s):
+         * nums: An array of numbers.
+         */
 
-function modifyArray(nums) {
-    console.log('test')
-}
+        // A: iterate over nums array
+            // A: check each number at nums[i] if it is positive or negative
+                // A: if nums[i] is positive, multiply that term by 2
+                    // A: push that new number into a new array
+
+                // A: if nums[i] is negative, multiply that term by 3
+                    // A: push that number into a new array
+
+                // A: join the two arrays together.
+                    // A: store in new variable - let modifiedArray = []
+
+            // A: return the modifiedArray
+
+
+        function modifyArray(nums) {
+
+            let multiples = []
+            nums.map((curr, acc) => {
+
+                if (curr % 2 === 0) {
+                    // console.log(curr)
+                    multiples.push(curr * 2)
+                } else {
+                    // console.log(curr)
+                    multiples.push(curr * 3)
+                }
+                    // console.log(multiples)
+            })
+            return multiples
+        }
 
 // TEST PARAMETERS:
 //
