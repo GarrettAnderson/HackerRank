@@ -694,3 +694,41 @@ catch (exception) {
 46
 }
 ```
+
+
+
+
+
+
+
+
+
+# DAY 4: Classes in JavaScript
+
+## Bitwise Operators in JavaScript
+
+### Bitwise Operators
+**Before discussing bitwise operators, let's review the following:**
+
+* Binary numbers
+* Base-10 (decimal number) to base-2 (binary number) conversions
+* Base-2 (binary number) to base-10 (decimal number) conversions
+* Representing negative base-10 numbers in base-2
+
+
+### Binary Number Basics
+* The binary, or base-2, numeral system is a way for us to express numbers. It's called binary because it only uses _two_ symbols, 0 and 1, to express these numbers. Examples of binary numbers are 1011, 100011, and 111.
+* The number of symbols in a number system is called its _base_ or _radix_. This is why we often see binary numbers referred to as base-2 (because each digit is in {0, 1}), and decimal numbers referred to as base-10 (because each digit is in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}).
+* We use the notation  to discuss numbers with different radixes, where ? is the number and _b_ is the base. For example, (1101)sub2 is the binary equivalent of the decimal number (13)sub10.
+* Each digit in a binary number is called a _bit_.
+
+### Base-10 (Decimal) to Base-2 (Binary) Conversions
+* We use the following algorithm to convert a decimal integer to a binary number:
+
+1. Take the decimal integer, divide it by 2, and record the quotient (the number of times 2 divided the integer) and the remainder (the number of units left over from the division, which will always be 0 or 1).
+2. Repeat step 1 on the quotient until the quotient becomes 0.
+3. Look at the sequence of remainders. The remainder from the first division operation corresponds to the binary number's _least significant bit_ (LSB) and the remainder from the last division operation corresponds to the number's _most significant bit_ (MSB). To get our binary number, we simply need to concatenate these remainder bits from most to least significant.
+
+
+
+### Base-2 (Binary) to Base-10 (Decimal) Conversions
