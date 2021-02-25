@@ -1,8 +1,7 @@
 
 
-==============================
-DAY 5: Classes in JavaScript
-==============================
+# DAY 5: Classes in JavaScript
+
 
 ## Functional Classes
   * In this section, we'll discuss some of the ways we can use functions to simulate the behavior of classes.
@@ -202,12 +201,12 @@ lime.color = 'yellow';
 console.log(lime.getInformation());
 ```
 
-# Classes
+## Classes
     * JavaScript classes, introduced in ECMAScript 6, are essentially syntactic sugar over JavaScript's existing prototype-based inheritance that don't actually introduce a new object-oriented inheritance model. This syntax is a means of more simply and clearly creating objects and deal with inheritance.
 
   **We define classes in two ways:**
 
-## Class Declarations
+### Class Declarations
     * One way to define a class is using a class declaration. To declare a class, we use the _class_ keyword and follow it with the class' name. Ideally, we always write class names in TitleCase.
 
 ####EXAMPLE
@@ -274,7 +273,7 @@ p = new Polygon(1, 2);
 console.log('Polygon p:', p);
 ```
 
-## Class Expressions
+### Class Expressions
     * Class expressions are another way to define a class, and they can be either named or unnamed. The name given to a named class expression is local to the class' body.
 
 #### EXAMPLE
@@ -328,7 +327,7 @@ let p = new Polygon(1, 2);
 console.log('p:', p);
 ```
 
-## The Constructor Method
+### The Constructor Method
   * The constructor method is a special method we use to create and initialize objects of a class.
 
   * A class can only have one special method with the name constructor, and attempting to write a class containing more than one constructor method will throw a SyntaxError.
