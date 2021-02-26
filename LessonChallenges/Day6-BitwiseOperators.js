@@ -22,26 +22,30 @@
 //     return inputString[currentLine++];
 // }
 
-
 function getMaxLessThanK(n, k) {
     let bitWise = []
     let sequence = new Set()
-    let seqVals = sequence.values()
 
     for (let i = 1; i <= n; i++) {
         sequence.add(i)
+        let seqVals = sequence.values()
         // console.log(seqVals)
 
-        if (seqVals.next().value % 2 === 1 ) {
-            bitWise.push(1)
-        } else {
-            bitWise.push(0)
-        }
+        // Accessing a value at a specific index in a set object
+        console.log(Array.from(seqVals)[0])
+
+
+
+        // if (seqVals.next().value % 2 === 1 ) {
+        //     bitWise.push(1)
+        // } else {
+        //     bitWise.push(0)
+        // }
     }
-        console.log(bitWise.reverse())
-        let binaryArr = bitWise.reverse()
-        let binaryVal = binaryArr.join('')
-        console.log(binaryVal)
+        // console.log(bitWise.reverse())
+        // let binaryArr = bitWise.reverse()
+        // let binaryVal = binaryArr.join('')
+        // console.log(binaryVal)
 }
 
 
