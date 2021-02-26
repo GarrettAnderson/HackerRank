@@ -769,7 +769,7 @@ Let's look at the binary representation of :
 Bitwise Operation Conventions
 Conceptually, the bitwise logical operators work as follows:
 
-The operands are converted to -bit integers, meaning they're expressed as sequences of  zeroes and ones. Any number larger than  bits is reduced to  bits by cutting off and discarding its excess most significant bits. The example below shows a binary integer before and after it's converted to a -bit integer:
+* The operands are converted to -bit integers, meaning they're expressed as sequences of  zeroes and ones. Any number larger than  bits is reduced to  bits by cutting off and discarding its excess most significant bits. The example below shows a binary integer before and after it's converted to a -bit integer:
 Before: 11100110111110100000000000000110000000000001
 After:              10100000000000000110000000000001
 Each bit in the first operand is paired with the corresponding bit in the second operand from least to most significant. In other words, the first LSB matches the first LSB, the second LSB matches the second LSB, and so on.
