@@ -36,11 +36,11 @@ function getMaxLessThanK(n, k) {
 
 
 
-        // if (seqVals.next().value % 2 === 1 ) {
-        //     bitWise.push(1)
-        // } else {
-        //     bitWise.push(0)
-        // }
+        if (seqVals.next().value % 2 === 1 ) {
+            bitWise.push(1)
+        } else {
+            bitWise.push(0)
+        }
     }
         // console.log(bitWise.reverse())
         // let binaryArr = bitWise.reverse()
