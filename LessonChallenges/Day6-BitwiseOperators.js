@@ -42,7 +42,7 @@ function getMaxLessThanK(n, k) {
             bitWise.push(0)
         }
     }
-        // console.log(bitWise.reverse())
+        console.log(bitWise.reverse())
         // let binaryArr = bitWise.reverse()
         // let binaryVal = binaryArr.join('')
         // console.log(binaryVal)
